@@ -67,8 +67,8 @@ section header .logo
 {
   position: absolute;
   left: 100px;
-  max-width: 600px;
-
+  max-width: 900px;
+  top: 45%;
   z-index: 0;
 
 }
