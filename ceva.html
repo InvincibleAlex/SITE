@@ -2,34 +2,113 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="jarallax.js">
-        <link rel="stylesheet" href="ceva.css">
+        <link rel="stylesheet" href="jarallax.css">
+        <link rel="stylesheet" type="text/css" href="Drift.css">
 
     </head>
     <body>
-       <div class="overall">
-           <div class="box">
-               <h2>DRIFT</h2>
-               <div class="container">
-                   <div class="imgBx jarallax">
-                       <img src="images/bgdrift.jpg" class="jarallax-img">
-                   </div>
-                   <div class="content">
-                       <p> Drifting</b> is a driving technique where the driver intentionally oversteers, with loss of traction, while maintaining control and driving the car through the 
-                        entirety of a corner. The technique causes the rear slip angle to exceed the front slip angle to such an extent that often the front wheels are pointing in
-                         the opposite direction to the turn (e.g. car is turning left, wheels are pointed right or vice versa, also known as opposite lock or counter-steering). 
-                        Drifting is traditionally done by <b>clutch kicking</b>, then intentionally oversteering and countersteering.
-                       </p>
-                   </div>
-               </div>
-           </div>
-       </div> 
-       <script src="jarallax.js"></script>
-       <script src="jarallax-element.js"></script>
-       <script type="text/javascript">
-        jarallax(document.querySelectorAll('.jarallax'), {
-             speed: 0.2
-          });
+        <section>
+            <header>
+                <div class="logo">
+                    <a href ="index.html" class="logo1">
+                        <img src="logos/logo.png">
+                    </a>
+                </div>
+            </header>
+            <img src="images/driftzone.jpg" class="bgdrift">
+            <img src="images/driftcar.png" class="cardrift">
+            <div class="content">
+               <img src="logos/driftlogo.png" class="drifttext">
+
+        </section>
+        <script type="text/javascript">
+        document.addEventListener("mousemove", function(e)
+        {
+        
+            const bgdrift = document.querySelector('.bgdrift')
+            const cardrift = document.querySelector('.cardrift')
+            const drifttext = document.querySelector('.drifttext')
+
+            
+            bgdrift.style.width = 100 + e.pageX/80 + '%';
+            bgdrift.style.height = 100 + e.pageX/90 + '%';
+
+            
+            cardrift.style.right= e.pageX/2 + 'px';
+
+            drifttext.style.left =100 + e.pageX/2 + 'px';
+
+
+        })
+
+        </script>
+
+
+<div class="overall">
+    <div class="box">
+        <h2 data-jarallax-element="0 -200">What Drift actually is</h2>
+        <div class="container">
+            <div class="imgBx jarallax">
+                <img src="images/bgdrift.jpg" class="jarallax-img">
+            </div>
+
+
+            <div class="content" data-jarallax-element="0 -200">
+                <p> Drifting</b> is a driving technique where the driver intentionally oversteers, with loss of traction, while maintaining control and driving the car through the 
+                 entirety of a corner. The technique causes the rear slip angle to exceed the front slip angle to such an extent that often the front wheels are pointing in
+                  the opposite direction to the turn (e.g. car is turning left, wheels are pointed right or vice versa, also known as opposite lock or counter-steering). 
+                 Drifting is traditionally done by <b>clutch kicking</b>, then intentionally oversteering and countersteering.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    </div> 
+    <div class="overall">
+        <div class="box">
+            <h2 data-jarallax-element="0 200">What Drift actually is</h2>
+            <div class="container">
+                <div class="imgBx jarallax">
+                    <img src="images/bgdrift4.jpg" class="jarallax-img">
+                </div>
+    
+    
+                <div class="content" data-jarallax-element="0 200">
+                    <p> Drifting</b> is a driving technique where the driver intentionally oversteers, with loss of traction, while maintaining control and driving the car through the 
+                     entirety of a corner. The technique causes the rear slip angle to exceed the front slip angle to such an extent that often the front wheels are pointing in
+                      the opposite direction to the turn (e.g. car is turning left, wheels are pointed right or vice versa, also known as opposite lock or counter-steering). 
+                     Drifting is traditionally done by <b>clutch kicking</b>, then intentionally oversteering and countersteering.
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div> 
+
+        <div class="overall">
+            <div class="box">
+                <h2 data-jarallax-element="0 -200">What Drift actually is</h2>
+                <div class="container">
+                    <div class="imgBx jarallax">
+                        <img src="images/gab.png" class="jarallax-img">
+                    </div>
+        
+        
+                    <div class="content" data-jarallax-element="0 -200">
+                        <p> Drifting</b> is a driving technique where the driver intentionally oversteers, with loss of traction, while maintaining control and driving the car through the 
+                         entirety of a corner. The technique causes the rear slip angle to exceed the front slip angle to such an extent that often the front wheels are pointing in
+                          the opposite direction to the turn (e.g. car is turning left, wheels are pointed right or vice versa, also known as opposite lock or counter-steering). 
+                         Drifting is traditionally done by <b>clutch kicking</b>, then intentionally oversteering and countersteering.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            </div> 
+    <script src="jarallax.js"></script>
+    <script src="jarallax-element.js"></script>
+    <script type="text/javascript">
+         jarallax(document.querySelectorAll('.jarallax'), {
+         speed: 0.2
+        });
     </script>
-    </body>
+  </body>
 </html>
