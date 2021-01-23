@@ -1,93 +1,323 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: Yu Gothic Ui;
-}
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,900&display=swap');
+*
+{ 
 
-header{
-      background-image: url(images/1.jpg);
-    height: 100%;
-    width: 100%;
-      background-size: cover;
-      background-position: center;
-    } 
-body{
-    display: flex;
-    justify-content:center;
-    align-items:center;
-    min-height: 100vh;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-} 
-a{
-    position: relative;
-    display: inline-block;
-    padding:12px 36px;
-    margin:10px 0;
-    color:rgb(255, 255, 255);
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 18px;
-    letter-spacing: 2px;
-    border-radius: 40px;
-    overflow: hidden;
-    background: linear-gradient(90deg,#F0105E,#D34C0E );
-
- }
- .rally1{
-    position: relative;
-    display: inline-block;
-    padding:12px 36px;
-    margin:10px 0;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 18px;
-    letter-spacing: 2px;
-    border-radius: 40px;
-    overflow: hidden;
-    background: linear-gradient(90deg,#12661A,#2F4858 )
-
- }
-.drift1{
-   position: relative;
-   display: inline-block;
-   padding:12px 36px;
-   margin:10px 0;
-   color: rgb(255, 255, 255);
-   text-decoration: none;
-   text-transform: uppercase;
-   font-size: 18px;
-   letter-spacing: 2px;
-   border-radius: 40px;
-   overflow: hidden;
-   background: linear-gradient(90deg,#000000,#677381 )
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 
 }
-.F11{
-    position: relative;
-    display: inline-block;
-    padding:12px 36px;
-    margin:10px 0;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 18px;
-    letter-spacing: 2px;
-    border-radius: 40px;
-    overflow: hidden;
-    background: linear-gradient(90deg,#ff0000,#ffffff )
- 
+html
+ {
+  scroll-behavior: smooth;
  }
-span
+
+section
 {
-    position: absolute;
-    background: #fff;
-    transform: translate(-50%,-50%);
-    pointer-events: none;
-    border-radius: 50%;
-    animation:animate 1s linear infinite;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex ;
+  justify-content: flex-start;
+  align-items:auto;
+  padding:100px;
+}
+
+section header
+{
+  position: absolute  ;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+
+}
+
+section header .logo
+{ 
+  
+  position: relative;
+  left: 10px;
+  cursor: pointer;
+    float: left;
+    width: 50px;
+    height: auto;
+
+}
+.content {
+  height:100%;
+  width:100%;
+  position: absolute;
+align-items: center;
+vertical-align:middle;
+text-align:center;
+line-height: 300px;
+
+
+}
+
+.bg
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+
+}
+
+.logo img
+{
+  position: absolute;
+  top: -39px;
+  left: -113px;
+  float: left;
+    width: 70px;
+    height: auto;
+    
+}
+
+.logo
+{
+  left: 1px;
+}
+
+::-webkit-scrollbar
+{
+    width: 20px;
+}
+
+::-webkit-scrollbar-track
+{
+    border: 5px solid #232943;
+    box-shadow:  inset 0 0 2.5px 2px rgba(0,0,0,0.5);
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: linear-gradient(45deg,#000000,#677381 );
+    border-radius: 5px;
+}
+
+.paragraf
+{
+    font-size: 22px;
+    padding: 20px;
+    z-index: 2;
+}
+
+body
+{
+  background:#181818;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+.overalll
+{
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+
+}
+
+.overalll h2
+{
+  margin-left: 20px;
+  font-size: 2em;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.overalll .container
+{
+  position: relative;
+  width: auto;
+  height: 900px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+
+
+}
+
+.overalll:nth-child(even) .container
+{
+  flex-direction: row-reverse;
+  display: flex;
+  flex-direction:row;
+}
+
+.overalll .container .imgBx
+{
+  position: relative;
+  width: 800px;
+  height: 500px;
+  overflow: hidden;
+  box-shadow: 0 25px 35px rgba(0,0,0,0.1);
+
+}
+
+.overalll .container .imgBx img
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overalll .container .content
+{
+  position: absolute;
+  right: 0;
+  margin-top: 200px;
+  margin-bottom: 40px;
+  padding: 40px;
+  background: #34363A;
+  z-index: 1;
+  max-width: 400px;
+  color: #fff;
+  box-shadow: 0 25px 35px rgba(0,0,0,0.1);
+  border-bottom: 1px solid #0077ff;
+}
+
+
+.container
+{
+
+  padding: 600px 0px;
+  transform-style: preserve-3d;
+
+
+}
+
+video
+{
+  width: 100%;
+  height: 100%;
+}
+.overalll .container .box
+{
+  position: relative;
+  margin: 0px;
+  transform-style: preserve-3d;
+  width: 551px;
+  height: 311px;
+  margin: 40px 20px 0 40px;
+  box-sizing: border-box;
+  border: 1px solid #000000;
+
+
+  
+}
+.overalll
+{
+background: url(images/brick5.jpg);
+background-size: cover;
+background-position: fixed;
+min-height: 100vh;
+display: flex;
+flex-direction: row;
+
+z-index: 2;
+}
+
+.container .box .imgBx
+{
+  list-style: none;
+  position: relative;
+  float: left;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  background-color:none;
+  margin: 0px 0px 0px px;
+  
+}
+.container .box .contentBx1
+{
+  position: absolute;
+  bottom: 2%;
+  left: 5%;
+  right: 50px;
+  background: #fff;
+  transform: translateZ(20px) scaleY(0);
+  padding: 4px 5px;
+  transform-origin: top;
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  background: linear-gradient(45deg,#000000,#677381);
+  border: 1px solid black;
+  
+}
+
+
+.container .box .contentBx2
+{
+  position: absolute;
+  bottom: 2%;
+  left: 5%;
+  right: 50px;
+  background: #fff;
+  transform: translateZ(20px) scaleY(0);
+  padding: 4px 5px;
+  transform-origin: top;
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  background: linear-gradient(45deg,#12661A,#2F4858 );
+  border: 1px solid black;
+  
+}
+
+.container .box  .contentBx3
+{
+  position: absolute;
+  bottom: 2%;
+  left: 5%;
+  right: 50px;
+  background: #fff;
+  transform: translateZ(20px) scaleY(0);
+  padding: 4px 5px;
+  transform-origin: top;
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  background: linear-gradient(45deg,#ff0000,#ffffff );
+  border: 1px solid black;
+  
+}
+.container .box:hover
+{
+  box-shadow: 0 50px 80px rgba(0, 0, 0,.2);
+}
+.container .box:hover #contentBx
+{
+  transform: translateZ(70px) scaleY(1);
+  
+}
+
+.container .strokeme
+{
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 @keyframes animate
 {
@@ -130,6 +360,99 @@ span
 }
 ::-webkit-scrollbar-thumb
 {
-    background: linear-gradient(45deg, #F0105E, #D34C0E );
+    background: linear-gradient(45deg,#12661A,#2F4858, #F0105E, #D34C0E,#000000,#677381 );
     border-radius: 5px;
 }
+footer
+{
+  background: #111;
+  height: auto;
+  width: 100vw;
+  font-family: "Open Sans";
+  padding-top: 40px;
+  color: #fff;
+  margin-top: auto;
+}
+.footer-content
+{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+.footer-content h3
+{
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3em;
+}
+.footer-content p
+{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-style: 14px;
+
+}
+.socials
+{
+  list-style: none;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+
+}
+.socials li
+{
+  margin: 0 10px;
+}
+.socials a
+{
+  text-decoration: none;
+  color: #fff;
+}
+.socials a i
+{
+  font-size: 1.1rem;
+  transition: color .4s ease;
+}
+.socials a:hover i
+{
+  color: greenyellow;
+}
+
+.footer-bottom
+{
+  background: #000;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-bottom p
+{
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-bottom span
+{
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+}
+
+@media (max-width: 800px) {
+  .overalll:nth-child(even) .container {
+    flex-direction: column;
+    margin-top: -1200px;
+    }
+  }
+
+@media (max-width: 800px) {
+  .container 
+    {
+      padding: 1300px 0px;
+    }
+  }
