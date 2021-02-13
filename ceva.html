@@ -1,97 +1,52 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="jarallax.css">
-        <link rel="stylesheet" type="text/css" href="ceva.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-    </head>
-    <body>
-        <section>
-            <header>
-                <div class="logo">
-                    <a href ="index.html" class="logo1">
-                        <img src="logos/logo.png">
-                    </a>
-                </div>
-            </header>
-            <img src="images/1.jpg" class="bg">
-            <div class="content">
-               <img src="logos/title.png" class="title">
+ <html lang="en" dir="ltr">
+   <head>
+       <meta charset="utf-8">
+       <link rel="stylesheet" href="ceva.css">
 
-        </section>
-        
-<div class="overalll">
-    <div class="container">
-        <div class="box">
-             <div class="imgBx">
-                 <video src="videos/rally.mp4" autoplay loop muted>
+   </head>
+<body>
 
-             </div>
-             <div class="strokeme">
-               <div id="contentBx"class="contentBx3">
-                <h2>F1</h2>
-                <p>"I AM SPEED"</p>
-              </div>
+    <div class="slider">
+        <div class="slides">
+
+            <!--aicia incepe-->
+
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            
+            <!--se termina-->
+            <!--slide incepe-->
+
+            <div class="slide_first">
+                <img src="images/slide1.jpg" alt="">
             </div>
+            <div class="slide_second">
+               <img src="images/slide2_3.jpg" alt="">
+            </div>
+            <div class="slide_third">
+                <img src="images/slide3.jpg" alt="">
+            </div>
+
+            <!--slide termina-->
+            
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+
         </div>
 
-        <div class="box">
-            <div class="imgBx">
-                <video src="videos/rally.mp4" autoplay loop muted>
-
-            </div>
-            <div class="strokeme">
-            <div id="contentBx" class="contentBx2">
-                <h2>Rally</h2>
-                <p>Something here</p>
-            </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="imgBx">
-                <video src="videos/drift.mp4" autoplay loop muted>
-
-            </div>
-            <div class="strokeme">
-            <div id="contentBx" class="contentBx1">
-                <h2>Drift</h2>
-                <p>Learn about the guy who became one with the car and how he handles the steering wheel like no one else.</p>
-            </div>
-            </div>
-        </div>
+          <div class="navigation-manual">
+              <label for="radio1" class="manual-btn"></label>
+              <label for="radio2" class="manual-btn"></label>
+              <label for="radio3" class="manual-btn"></label>
+          </div>
 
     </div>
-    </div>
-    <script type="text/javascript" src="3dtilt.js"></script>
-    <script type="text/javascript">
-        VanillaTilt.init(document.querySelectorAll(".box"), {
-            max: 25,
-            speed: 400
-        });
-
-    </script> 
-  </body>
-  <footer>
-    <div class="footer-content">
-        <h3>LEGENDARY DRIVERS</h3>
-        <p>This site was created with educational purpose.</p>
-        <ul class="socials">
-            <li><a href="https://www.facebook.com/alexandru.birgaoanu/"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="https://account.xbox.com/en-us/Profile?xr=mebarnav&rtc=1"><i class="fab fa-xbox"></i></a></li>
-            <li><a href="https://twitter.com/InvincibleAlex3"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://www.instagram.com/alexandru.birg/"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="https://steamcommunity.com/id/Invinciblealex2"><i class="fab fa-steam"></i></a></li>
-            <li><a href="https://www.youtube.com/channel/UClj0mc4PX8ioCNdx3DTFmHA"><i class="fab fa-youtube"></i></a></li>
-            <li><a href="https://www.twitch.tv/InvincibleAlex"><i class="fab fa-twitch"></i></a></li>
 
 
-        </ul>
-    </div>
-    <div class="footer-bottom">
-        <p>copyright &copy; <script>document.write(new Date().getFullYear())</script> Legendary Drivers. designed by  <span>Alex Bîrgăoanu</span></p>
-    </div>
-</footer>
-</html>
+</body>
+ </html>
