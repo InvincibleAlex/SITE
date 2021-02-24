@@ -51,13 +51,12 @@ section header .logo
 
 }
 .content {
-  height:100%;
-  width:100%;
   position: absolute;
-align-items: center;
-vertical-align:middle;
-text-align:center;
-line-height: 300px;
+  z-index: 1;
+  left:50%;
+  top: 0;
+  margin-left: -570px;
+  margin-top: 66px;
 
 
 }
@@ -167,11 +166,10 @@ body
 .overalll .container .imgBx
 {
   position: relative;
-  width: 800px;
-  height: 500px;
+  width: 8020px;
+  height: 5200px;
   overflow: hidden;
   box-shadow: 0 25px 35px rgba(0,0,0,0.1);
-
 }
 
 .overalll .container .imgBx img
