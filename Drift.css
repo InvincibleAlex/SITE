@@ -179,8 +179,8 @@ body:before
 .overall .container .imgBx
 {
   position: relative;
-  width: 800px;
-  height: 400px;
+  width: 850px;
+  height: 500px;
   overflow: hidden;
   box-shadow: 0 25px 35px rgba(0,0,0,0.1);
 

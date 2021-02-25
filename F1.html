@@ -1,37 +1,135 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="Rally.css">
-        <link rel="stylesheet" href="jarallax.css">
-        <link rel="stylesheet" type="text/css" href="F1.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-
+       <link rel="stylesheet" type="text/css" href="F1.css">
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     </head>
-<body>
+    <body>
+        <section>
 
-</body>
-<footer>
-    <div class="footer-content">
-        <h3>LEGENDARY DRIVERS</h3>
-        <p>This site was created with educational purpose.</p>
-        <ul class="socials">
-            <li><a href="https://www.facebook.com/alexandru.birgaoanu/"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="https://account.xbox.com/en-us/Profile?xr=mebarnav&rtc=1"><i class="fab fa-xbox"></i></a></li>
-            <li><a href="https://twitter.com/InvincibleAlex3"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://www.instagram.com/alexandru.birg/"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="https://steamcommunity.com/id/Invinciblealex2"><i class="fab fa-steam"></i></a></li>
-            <li><a href="https://www.youtube.com/channel/UClj0mc4PX8ioCNdx3DTFmHA"><i class="fab fa-youtube"></i></a></li>
-            <li><a href="https://www.twitch.tv/InvincibleAlex"><i class="fab fa-twitch"></i></a></li>
-            <li><a href="https://www.reddit.com/user/lnvincibleAlex"><i class="fab fa-reddit"></i></a></li>
-            <li><a href="https://github.com/InvincibleAlex"><i class="fab fa-github"></a></i>
+               <a href="index.html" class="logo">
+                <img src="logos/logo.png"></a>
+
+            <div id="carrally"></div>
+            <img src="images/carf1.png" class="carrally">
+        
+            <div class="content">
+                <img src="logos/rallylogo.png" class="rallytext">
+            </div>
+            <img src="images/F1bg2.jpg" class="bgrally">
 
 
-        </ul>
+        </section>
+        <script type="text/javascript">
+        var position = document.documentElement;
+        position.addEventListener("mousemove", e => {
+            position.style.setProperty('--x', e.clientX + "px");
+        })
+        </script>
+        <script type="text/javascript">
+            document.addEventListener("mousemove", function(e)
+            {
+            
+                const bgrally = document.querySelector('.bgrally')
+
+                
+                bgrally.style.width = 100 + e.pageX/90 + '%';
+                bgrally.style.height = 100 + e.pageX/80 + '%';
+    
+                
+    
+    
+            })
+            </script>
+
+<div class="overall">
+    <div class="box">
+        <h2 data-jarallax-element="0 -200">What Rally actually is</h2>
+        <div class="container">
+            <div class="imgBx jarallax">
+                <img src="images/rally1.jpg" class="jarallax-img">
+            </div>
+
+
+            <div class="content" data-jarallax-element="-200 0">
+                <p><b>Rally</b> is a form of motorsport that takes place on public or private roads with modified
+                     production or specially built road-legal cars. It is distinguished by not running on a <b>circuit</b>, but
+                      instead in a point-to-point format in which participants and their co-drivers drive between set 
+                      control points (special stages), leaving at regular intervals from one or more start points.
+                </p>
+            </div>
+        </div>
     </div>
-    <div class="footer-bottom">
-        <p>copyright &copy; <script>document.write(new Date().getFullYear())</script> Legendary Drivers. designed by  <span>Alex Bîrgăoanu</span></p>
-    </div>
-</footer>
+
+    </div> 
+    <div class="overall">
+        <div class="box">
+            <h2 data-jarallax-element="0 200">Creator</h2>
+            <div class="container">
+                <div class="imgBx jarallax">
+                    <img src="images/rally2.jpg" class="jarallax-img">
+                </div>
+    
+    
+                <div class="content" data-jarallax-element="-200 0">
+                    <p> The term "<b>Rally</b>", as a branch of motorsport, probably dates from the first Monte
+                         Carlo Rally of January 1911. Until the late 1920s, few if any other events used
+                          the term. Rallying itself can be traced back to the 1894 Paris–Rouen Horseless
+                           Carriage Competition, Le Petit Journal, which attracted considerable public interest and entries
+                             from leading manufacturers.
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div> 
+
+        <div class="overall">
+            <div class="box">
+                <h2 data-jarallax-element="0 -200">Drift king</h2>
+                <div class="container">
+                    <div class="imgBx jarallax">
+                        <img src="images/Keiichi_Tsuchiya.jpg" class="jarallax-img">
+                    </div>
+        
+        
+                    <div class="content" data-jarallax-element="-200 0">
+                        <p> Keiichi Tsuchiya, known as the "Drift King" (ドリフトキング, Dorifuto Kingu), became particularly interested by Takahashi's drift techniques. Tsuchiya began practicing his drifting skills on the mountain roads of Japan, and quickly gained a reputation amongst the racing crowd. 
+                            In 1987, several popular car magazines and tuning garages agreed to produce a video of Tsuchiya's drifting skills.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            </div> 
+    <script src="jarallax.js"></script>
+    <script src="jarallax-element.js"></script>
+    <script type="text/javascript">
+         jarallax(document.querySelectorAll('.jarallax'), {
+         speed: 0.2
+        });
+    </script>
+    </body>
+    <footer>
+        <div class="footer-content">
+            <h3>LEGENDARY DRIVERS</h3>
+            <p>This site was created with educational purpose.</p>
+            <ul class="socials">
+                <li><a href="https://www.facebook.com/alexandru.birgaoanu/"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://account.xbox.com/en-us/Profile?xr=mebarnav&rtc=1"><i class="fab fa-xbox"></i></a></li>
+                <li><a href="https://twitter.com/InvincibleAlex3"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/alexandru.birg/"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://steamcommunity.com/id/Invinciblealex2"><i class="fab fa-steam"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UClj0mc4PX8ioCNdx3DTFmHA"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="https://www.twitch.tv/InvincibleAlex"><i class="fab fa-twitch"></i></a></li>
+                <li><a href="https://www.reddit.com/user/lnvincibleAlex"><i class="fab fa-reddit"></i></a></li>
+                <li><a href="https://github.com/InvincibleAlex"><i class="fab fa-github"></a></i>
+    
+    
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy; <script>document.write(new Date().getFullYear())</script> Legendary Drivers. designed by  <span>Alex Bîrgăoanu</span></p>
+        </div>
+    </footer>
 </html>
