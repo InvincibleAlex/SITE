@@ -8,41 +8,44 @@
     </head>
     <body>
         <section>
-
-               <a href="index.html" class="logo">
-                <img src="logos/logo.png"></a>
-
-            <div id="carrally"></div>
-            <img src="images/carf1.png" class="carrally">
-        
+            <header>
+                <div class="logo">
+                    <a href ="index.html" class="logo1">
+                        <img src="logos/logo.png">
+                    </a>
+                </div>
+            </header>
+            <img src="images/F1bg2.jpg" class="bgdrift">
+            <img src="images/carf1.png" class="cardrift">
             <div class="content">
-                <img src="logos/rallylogo.png" class="rallytext">
-            </div>
-            <img src="images/F1bg2.jpg" class="bgrally">
-
+               <img src="logos/f1logo.png" class="drifttext">
 
         </section>
         <script type="text/javascript">
-        var position = document.documentElement;
-        position.addEventListener("mousemove", e => {
-            position.style.setProperty('--x', e.clientX + "px");
-        })
-        </script>
-        <script type="text/javascript">
-            document.addEventListener("mousemove", function(e)
-            {
-            
-                const bgrally = document.querySelector('.bgrally')
+        document.addEventListener("mousemove", function(e)
+        {
+        
+            const bgdrift = document.querySelector('.bgdrift')
+            const cardrift = document.querySelector('.cardrift')
+            const drifttext = document.querySelector('.drifttext')
 
-                
-                bgrally.style.width = 100 + e.pageX/90 + '%';
-                bgrally.style.height = 100 + e.pageX/80 + '%';
-    
-                
-    
-    
-            })
-            </script>
+            
+            bgdrift.style.width = 100 + e.pageX/150 + '%';
+            bgdrift.style.height = 100 + e.pageX/150 + '%';
+
+            
+            cardrift.style.right= -e.pageX/1 + 'px';
+            cardrift.style.bottom= -e.pageX/3 + 'px';
+
+            cardrift.style.width = 10 + e.pageX/2 + '%';
+            cardrift.style.height = 10 + e.pageX/2 + '%';
+
+            drifttext.style.left =100 + e.pageX/2 + 'px';
+
+
+        })
+
+        </script>
 
 <div class="overall">
     <div class="box">
@@ -102,6 +105,8 @@
                 </div>
             </div>
             </div> 
+
+
     <script src="jarallax.js"></script>
     <script src="jarallax-element.js"></script>
     <script type="text/javascript">
