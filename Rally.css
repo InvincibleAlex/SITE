@@ -24,10 +24,13 @@ section
 section .bgrally
 {
   position: relative;
-  background-size: cover;
-  background-position: center;
+  bottom: 0;
+  left: 0;
   width: 100%;
   height: 100vh;
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
 
   z-index: 0;
 }

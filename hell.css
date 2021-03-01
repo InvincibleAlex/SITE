@@ -11,7 +11,7 @@
 
 html
  {
-  scroll-behavior: smooth;
+  scroll-behavior:smooth;
  }
 
 
@@ -27,7 +27,8 @@ html
   object-fit: cover;
   background-position: center;
   background-size: cover;
-  margin: 0;
+  
+
 }
 
 .overalll
@@ -63,7 +64,7 @@ html
   left: 50%;
   top: 50%;
   margin-left: -60px;
-  margin-top: 200px;
+  margin-top: 150px;
 
 
 

@@ -1,36 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,900&display=swap');
-*
-{ 
-
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-
+@font-face {
+  src: url(fonts/demon_font.ttf);
+  font-family: nosifer;
 }
 
 html
  {
-  scroll-behavior: smooth;
+  scroll-behavior:smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
  }
 
-
-
-
-.demon1
-{
-  position: relative;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-  background-position: center;
-  background-size: cover;
-  margin: 0;
-}
-
-.overalll
+.overall1
 {
   position: relative;
   width: 100%;
@@ -40,7 +22,58 @@ html
 
 }
 
-.overalll .imgBx video
+.content 
+{
+  position: absolute;
+  color: rgb(255, 0, 0);
+  z-index: 2;
+  bottom: 50%;
+  left: 7%;
+  font-size: 40px;
+  font-family: nosifer;
+  letter-spacing: 5px;
+  font-weight: 50;
+}
+
+
+.demon1
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+  z-index: -1;
+}
+
+
+ section .box23 {
+
+  width: 200px;
+  height: 100px;
+  overflow: auto;
+  position: absolute;
+
+  
+}
+    
+
+
+.overall2
+{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+
+
+}
+
+.overall2 .imgBx video
 {
   position: absolute;
   top: 0;
@@ -50,7 +83,7 @@ html
   object-fit: cover;
   size: auto;
 }
-.overalll .box1
+.overall2 .fire
 {
   position: relative;
   width: 120px;
@@ -64,11 +97,12 @@ html
   top: 50%;
   margin-left: -60px;
   margin-top: 200px;
+  animation: the_sign 20s infinite;
 
 
 
 }
-.overalll .box1 img
+.overall2 .fire img
 {
   width: 100%;
   transition: all linear 0.4s;
@@ -81,26 +115,31 @@ img.hover-img
   opacity: 0;
 
 }
-.box1:hover img
+.fire:hover img
 {
   opacity: 0;
 }
-.box1:hover img.hover-img
+.fire:hover img.hover-img
 {
   opacity: 1;
 }
 
-.box{  
-  animation-name: floating;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  margin-left:30px;
-  margin-top: 5px;
-}
 
-@keyframes floating {
-  0% { transform: translate(0,  0px); }
-  65%  { transform: translate(0, 15px); }
-  0%  { transform: translate(0, 0px); }    
+
+@keyframes the_sign{
+  0%{
+      margin-top: 5%;
+  }
+  25%{
+      margin-top: 7%;
+  }
+  50%{
+      margin-top: 9%;
+  }
+  75%{
+       margin-top: 7%;
+  }
+  100%{
+      margin-top: 5%;
+  }
 }
