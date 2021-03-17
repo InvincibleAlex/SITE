@@ -1,39 +1,53 @@
-<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="jarallax.css">
-        <link rel="stylesheet" type="text/css" href="404.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+        <meta   name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SI NOI AICIA</title>
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="404.css">
     </head>
-    <body>
 
-            
+<div class="overall4"></div>
+    <section>
+
+
+
+      <h2 class="text">This-is-Literally-your-soul-</h2>
+
+
+
       
+      <div class="overall1"> 
+        <div class="demon_text">
+            <p>So you have reached the forbidden place.
+                <br>
+                <br>
+                <br>
+            I could kill you right now...
+                <br>
+                <br>
+                <br>
+            however
+                <br>
+                <br>
+                <br>
+            I assume you didn't come here on purpose.
+        </p>
+            </div>
         
-       
-        <div class="overall1"> 
-            <div class="demon_text">
-                <p>So you have reached the forbidden place.<br>
-                    <br>
-                    <br>
-                I could kill you right now...
-                    <br>
-                    <br>
-                however
-                    <br>
-                    <br>
-                I assume you didn't come here on purpose.
-            </p>
-                </div>
-            
-           <img class="demon1" src="images/demon1.jpg">
-        
+       <img class="demon1" src="images/demon1.jpg">
     
-    
-        </div>
-    
+
+
+    </div>
+
+
+      
+
+
+    </section>
+  
+
     <div class="overall2"> 
             <a href="index.html"><div class="fire">
                 
@@ -52,4 +66,28 @@
 
                 </div>  
         </div>
+    <body>
+
+      <script>
+          const text = document.querySelector('.text');
+          text.innerHTML = text.textContent.replace(/\S/g,
+          "<span>$&</span>");
+
+          const element = document.querySelectorAll('span');
+          for(let i = 0; i<element.length; i++)
+            {
+                element[i].style.transform = "rotate("+i*13+"deg)"
+            }
+
+          document.addEventListener("mousemove", function(e)
+            {
+              text.style.left = e.pageX + 'px';
+              text.style.top = e.pageY + 'px';
+            }
+          
+                )
+
+       </script>
+
+       
     </body>
