@@ -1,46 +1,40 @@
-<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="jarallax.css">
-        <link rel="stylesheet" type="text/css" href="ceva.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+        <meta   name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SI NOI AICIA</title>
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="ceva.css">
     </head>
-    <body>
+<body>
+    <div class="ovarall3">
 
-            
-      
-        
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+          
+            <div class="swiper-slide"><div class="first"><span style="color: rgb(255, 234, 43);">1</span> Nissan Silvia</div><video src="videos/silvia.mp4" autoplay loop muted></div>
+            <div class="swiper-slide"><div class="second"><span style="color: rgb(129, 129, 129);">2</span> Toyota AE86</div><video src="videos/ae86.mp4" autoplay loop muted></div>
+            <div class="swiper-slide"><div class="third"><span style="color: rgb(184, 110, 0);">3</span> Mazda RX-7</div><video src="videos/mazda.mp4" autoplay loop muted></div>
+
+        </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          coverflowEffect: {
+              rotate: 20,
+              stretch: 0,
+              depth: 900,
+              modifier: 1,
+              slideShadows : true,
+          },
+          loop: true,
        
-        <div class="overall1"> 
-            <div class="content">
-
-                <p>So you have reached <br> the forbidden place</p>
-
-            </div> 
-           <img class="demon1" src="images/demon1.jpg">
-        
-    
-    
-        </div>
-    
-    <div class="overall2"> 
-            <a href="index.html"><div class="fire">
-                
-                <img src="logos/sign.png">
-                <img class="hover-img" src="logos/sign1.png">
-                                
-                 </div></a>  
-                
-                
-                 <div class="box23">
-                     
-                    <div class="imgBx">
-                         <video src="videos/demon_5.mp4" autoplay loop muted>
-        
-                    </div>
-
-                </div>  
-        </div>
-    </body>
+        });
+      </script>
+    </div>
+</body>

@@ -11,6 +11,8 @@
 html
  {
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
  }
 
 section
@@ -294,3 +296,64 @@ footer
   opacity: .4;
   font-weight: 200;
 }
+
+.overall3
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+  }
+
+.swiper-container {
+  max-width: 1639px;
+  max-height: 1000px;
+  padding: 80px;
+  background-color: transparent;
+  padding-bottom: 440px;
+  
+
+
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  max-width: 750px;
+  max-height: 490px;
+  padding: 0px;
+  left: 28px;
+
+
+
+}
+.swiper-slide video
+  {
+    width: 100%;  
+    border-radius: 12px;
+  }
+.swiper-slide .first
+  {
+    position: relative;
+    font-size: 36px;
+    text-align: center;
+  }
+  .swiper-slide .second
+  {
+    position: relative;
+    font-size: 36px;
+    text-align: center;
+  }
+  .swiper-slide .third
+  {
+    position: relative;
+    font-size: 36px;
+    text-align: center;
+  }
+  s.swiper-slide .fist .number1
+   {
+     font-size: 80px;
+   }

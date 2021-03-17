@@ -441,7 +441,7 @@ footer
   font-weight: 200;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1160px) {
   .overalll:nth-child(even) .container {
     flex-direction: column;
     margin-top: -1200px;

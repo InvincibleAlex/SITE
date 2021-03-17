@@ -1,0 +1,237 @@
+@font-face {
+  src: url(fonts/demon_font.ttf);
+  font-family: nosifer;
+}
+
+html
+ {
+  scroll-behavior:smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+ }
+
+.overall1
+{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+
+
+}
+.demon_text {
+  position: absolute;
+
+  width: 490px;
+  height: 120px;
+  overflow: auto;
+  color: rgb(255, 0, 0);
+  z-index: 1;
+  bottom: 50%;
+  left: 7%;
+  font-size: 40px;
+  font-family: nosifer;
+  letter-spacing: 5px;
+  font-weight: 50;
+  overflow-y: scroll;
+  padding: 23px ;
+  overflow: scroll;
+  overflow-x: hidden;
+
+
+  
+}
+::-webkit-scrollbar 
+  {
+  width: 0px;
+  }
+::-webkit-scrollbar-thumb {
+  background: #FF0000;
+  }
+
+.demon1
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+  z-index: -1;
+}
+
+
+ section .box23 {
+
+  width: 200px;
+  height: 100px;
+  overflow: auto;
+  position: absolute;
+
+  
+}
+    
+
+
+.overall2
+{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+
+
+}
+
+.overall2 .imgBx video
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  size: auto;
+}
+.overall2 .fire
+{
+  position: absolute;
+  width: 120px;
+  height: auto; 
+  display: inline-block;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 15px;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  margin-left: -60px;
+  margin-top: 200px;
+  animation: the_sign 20s infinite;
+
+
+
+}
+.overall2 .fire img
+{
+  width: 100%;
+  transition: all linear 0.4s;
+}
+img.hover-img
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+
+}
+.fire:hover img
+{
+  opacity: 0;
+}
+.fire:hover img.hover-img
+{
+  opacity: 1;
+}
+
+
+
+@keyframes the_sign{
+  0%{
+      margin-top: 5%;
+  }
+  25%{
+      margin-top: 7%;
+  }
+  50%{
+      margin-top: 9%;
+  }
+  75%{
+       margin-top: 7%;
+  }
+  100%{
+      margin-top: 5%;
+  }
+}
+
+@font-face {
+  src: url(fonts/devil-language.ttf);
+  font-family: devil-language;
+}
+
+section
+{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow:hidden;
+
+}
+section .text
+{
+  position: absolute;
+  color: rgb(255, 255, 255);
+  font-size: 1.5em;
+  font-weight: lighter;
+  user-select: none;
+  pointer-events: none;
+  animation: your_soul 23s linear infinite;
+  font-family: devil-language;
+  z-index: 2;
+
+}
+@keyframes your_soul
+  {
+    0%{
+      transform: rotate(360deg);
+    }
+    6%{
+      transform: rotate(320deg);
+    }
+    12%{
+      transform: rotate(350deg);
+    }
+    30%{
+      transform: rotate(225deg);
+    }
+    36%{
+      transform: rotate(240deg);
+    }
+    42%{
+      transform: rotate(200deg);
+    }
+    48%{
+      transform: rotate(235deg);
+    }
+    54%{
+      transform: rotate(150deg);
+    }
+    60%{
+      transform: rotate(190deg);
+    }
+    79%{
+      transform: rotate(65deg);
+    }
+    86%{
+      transform: rotate(90deg);
+    }
+    100%{
+      transform: rotate(0deg);
+    }
+  }
+section .text span
+{
+  position: absolute;
+  text-transform: uppercase;
+  display: inline-block;
+  top: -100px;
+  transform-origin: 0 100px;
+
+}

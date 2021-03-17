@@ -1,145 +1,59 @@
-@font-face {
-  src: url(fonts/demon_font.ttf);
-  font-family: nosifer;
-}
 
-html
- {
-  scroll-behavior:smooth;
+html{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
- }
-
-.overall1
-{
-  position: relative;
-  width: 100%;
-  height: 100vh;
+}
+body {
+  background: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  color: #000;
+  display: flex;
+  justify-content: center;
   align-items: center;
+}
+
+.swiper-container {
+  width: 1254px;
+  height: 600px;
+  padding: 80px;
 
 
 }
 
-.content 
-{
-  position: absolute;
-  color: rgb(255, 0, 0);
-  z-index: 2;
-  bottom: 50%;
-  left: 7%;
-  font-size: 40px;
-  font-family: nosifer;
-  letter-spacing: 5px;
-  font-weight: 50;
-}
-
-
-.demon1
-{
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
+.swiper-slide {
   background-position: center;
   background-size: cover;
-  margin: 0;
-  z-index: -1;
-}
-
-
- section .box23 {
-
-  width: 200px;
+  width: 550px;
   height: 100px;
-  overflow: auto;
-  position: absolute;
-
-  
-}
-    
-
-
-.overall2
-{
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  align-items: center;
+  padding: 30px;
 
 
 }
-
-.overall2 .imgBx video
-{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  size: auto;
-}
-.overall2 .fire
-{
-  position: relative;
-  width: 120px;
-  height: auto; 
-  display: inline-block;
-  border-radius: 8px;
-  overflow: hidden;
-  margin: 15px;
-  z-index: 1;
-  left: 50%;
-  top: 50%;
-  margin-left: -60px;
-  margin-top: 200px;
-  animation: the_sign 20s infinite;
-
-
-
-}
-.overall2 .fire img
-{
-  width: 100%;
-  transition: all linear 0.4s;
-}
-img.hover-img
-{
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-
-}
-.fire:hover img
-{
-  opacity: 0;
-}
-.fire:hover img.hover-img
-{
-  opacity: 1;
-}
-
-
-
-@keyframes the_sign{
-  0%{
-      margin-top: 5%;
+.swiper-slide video
+  {
+    width: 100%;  
+    border-radius: 12px;
   }
-  25%{
-      margin-top: 7%;
+.swiper-slide .first
+  {
+    position: relative;
+    font-size: 36px;
+    text-align: center;
   }
-  50%{
-      margin-top: 9%;
+  .swiper-slide .second
+  {
+    position: relative;
+    font-size: 36px;
+    text-align: center;
   }
-  75%{
-       margin-top: 7%;
+  .swiper-slide .third
+  {
+    position: relative;
+    font-size: 36px;
+    text-align: center;
   }
-  100%{
-      margin-top: 5%;
-  }
-}
+  s.swiper-slide .fist .number1
+   {
+     font-size: 80px;
+   }
