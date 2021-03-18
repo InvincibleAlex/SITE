@@ -7,12 +7,14 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 
+
 }
 html
  {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
+
  }
 
 section
@@ -308,16 +310,27 @@ footer
 
   }
 
+
+
+
+
+
 .swiper-container {
   max-width: 1639px;
   max-height: 1000px;
   padding: 80px;
   background-color: transparent;
   padding-bottom: 440px;
-  
-
+  margin-bottom: 200px;
+  opacity: 0;
+  transition: 1s;
 
 }
+.swiper-container[data-scroll="in"]
+  {
+    opacity: 1;
+    transition-delay: 1s;
+  }
 
 .swiper-slide {
   background-position: center;
@@ -357,3 +370,53 @@ footer
    {
      font-size: 80px;
    }
+
+
+
+
+
+
+   .top_cars
+   {
+     max-width: 80%;
+     align-items: center;
+   }
+   .top_cars h2
+   {
+     position: relative;
+     margin: 0;
+     padding: 0;
+     display: inline-block;
+     font-size: 2em;
+     transition: 0.5s;
+     transform-origin: left;
+     transform: scaleX(0);
+     margin-bottom: 80px;
+     max-width: 80%;
+     left: 70px;
+   
+}
+.top_cars h2[data-scroll="in"]
+  {
+    transform: scaleX(1);
+  }
+
+.top_cars h2::before
+  {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0077ff;
+    transform-origin: right;
+    transition: 0.5s;
+  }
+
+.top_cars h2[data-scroll="in"]::before
+    {
+      transform: scaleX(0);
+      transition-delay: 0.5s;
+    }
+

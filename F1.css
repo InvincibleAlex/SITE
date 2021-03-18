@@ -68,6 +68,9 @@ section header .logo
 .cardrift
 {
   position: absolute;
+  
+  min-width: 500px;
+  max-width: 1200px;
   max-height: auto;
   padding: 0;
   z-index: 1;
@@ -88,7 +91,7 @@ section header .logo
   max-width: 110%;
   top: 45%;
   width: 600px;
-  z-index: 0;
+  z-index: 1;
 
 }
 

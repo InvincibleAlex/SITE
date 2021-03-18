@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,900&display=swap');
+@font-face {
+  src: url(fonts/lobby.ttf);
+  font-family: nosifer;
+}
 *
 { 
 
@@ -124,6 +128,46 @@ body
   min-height: 100vh;
 }
 
+.choose
+  {
+    font-size: 3em;
+  }
+.choose h2
+{
+  position: absolute;
+  top: 120px;
+  transform-origin: left;
+  transition: 0.5s;
+  left: 25%;
+  transform: scaleX(0);
+  font-family: nosifer;
+  font-weight: lighter;
+  
+}
+.choose h2::before
+  {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: chartreuse;
+    transform-origin: right;
+    transition: 0.5s;
+  }
+
+.choose h2[data-scroll="in"]
+  {
+    transform: scaleX(1);
+  }
+
+  .choose h2[data-scroll="in"]:before
+    {
+      transform: scaleX(0);
+      transition-delay: 0.5s;
+    }
+
 
 .overalll
 {
@@ -152,9 +196,18 @@ body
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  opacity: 0;
+  transition: 1s;
 
 
 }
+
+
+.overalll .container[data-scroll="in"]
+  {
+    opacity: 1;
+    transition-delay: 1s;
+  }
 
 .overalll:nth-child(even) .container
 {
