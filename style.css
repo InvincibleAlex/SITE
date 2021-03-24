@@ -55,12 +55,14 @@ section header .logo
 
 }
 .content {
-  position: absolute;
+  position: relative;
   z-index: 1;
   left:50%;
   top: 0;
   margin-left: -570px;
-  margin-top: 66px;
+
+
+  
 
 
 }
@@ -152,7 +154,7 @@ body
     left: 0;
     width: 100%;
     height: 100%;
-    background: chartreuse;
+    background: linear-gradient(45deg,#12661A,#2F4858, #F0105E, #D34C0E,#000000,#677381);
     transform-origin: right;
     transition: 0.5s;
   }

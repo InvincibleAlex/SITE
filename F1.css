@@ -1,100 +1,108 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,900');
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,900&display=swap');
 *
-
-{
-   margin: 0;
-   padding: 0;
-   font-family: 'Poppins', sans-serif;
-   box-sizing: border-box;
-   
-
-}
-body
-{
-  overflow-x: hidden;
-
-}
-
-section
-{
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  display: flex ;
-  justify-content: flex-start;
-  align-items:auto;
-  padding:100px;
-}
-
-section header
-{
-  position: absolute  ;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 40px 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 10;
-
-}
-
-section header .logo
 { 
-  
-  position: relative;
-  left: 10px;
-  cursor: pointer;
-    float: left;
-    width: 50px;
-    height: auto;
 
-}
-
-.bgdrift
-{
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  background-position: center;
-
-}
-
-.cardrift
-{
-  position: absolute;
-  
-  min-width: 500px;
-  max-width: 1200px;
-  max-height: auto;
+  margin: 0;
   padding: 0;
-  z-index: 1;
-  margin-right: 700px;
-  margin-bottom: 400px;
-
-
-
-
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 
 
 }
+html
+ {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
 
-.drifttext
-{
-  position: relative;
-  left: 100px;
-  max-width: 110%;
-  top: 45%;
-  width: 600px;
-  z-index: 1;
+ }
 
-}
-
+ body
+ {
+   overflow-x: hidden;
+ 
+ }
+ 
+ section
+ {
+   position: relative;
+   width: 100%;
+   height: 100vh;
+   overflow: hidden;
+   display: flex ;
+   justify-content: flex-start;
+   align-items:auto;
+   padding:100px;
+ }
+ 
+ section header
+ {
+   position: absolute  ;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding: 40px 100px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   z-index: 10;
+ 
+ }
+ 
+ section header .logo
+ { 
+   
+   position: relative;
+   left: 10px;
+   cursor: pointer;
+     float: left;
+     width: 50px;
+     height: auto;
+ 
+ }
+ 
+ .bgf1
+ {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   background-position: center;
+ 
+ }
+ 
+ .carf1
+ {
+   position: absolute;
+   
+   min-width: 500px;
+   max-width: 1200px;
+   max-height: auto;
+   padding: 0;
+   z-index: 1;
+   margin-right: 700px;
+   margin-bottom: 400px;
+ 
+ 
+ 
+ 
+ 
+ 
+ }
+ 
+ .f1text
+ {
+   position: relative;
+   left: 100px;
+   max-width: 110%;
+   top: 45%;
+   width: 600px;
+   z-index: 1;
+ 
+ }
+ 
 .logo img
 {
   position: absolute;
@@ -110,19 +118,29 @@ section header .logo
 {
   left: 1px;
 }
+
 ::-webkit-scrollbar
 {
     width: 20px;
 }
+
 ::-webkit-scrollbar-track
 {
     border: 5px solid #232943;
     box-shadow:  inset 0 0 2.5px 2px rgba(0,0,0,0.5);
 }
+
 ::-webkit-scrollbar-thumb
 {
     background: linear-gradient(45deg,#F0105E,#D34C0E );
     border-radius: 5px;
+}
+
+.paragraf
+{
+    font-size: 22px;
+    padding: 20px;
+    z-index: 2;
 }
 
 body
@@ -130,12 +148,11 @@ body
   background:#181818;
   padding-bottom: 300px;
   overflow-x: hidden;
-  min-height: 100vh;
 }
 
 body:before
 {
-  content: 'F1';
+  content: 'Drift';
   position: fixed;
   top: 50%;
   left: 50%;
@@ -144,7 +161,6 @@ body:before
   font-weight: 700;
   color: transparent;
   -webkit-text-stroke: 1px #555;
-  min-height: 100vh;
 }
 
 .overall
@@ -171,7 +187,6 @@ body:before
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 
 }
 
@@ -183,7 +198,7 @@ body:before
 .overall .container .imgBx
 {
   position: relative;
-  width: 900px;
+  width: 850px;
   height: 500px;
   overflow: hidden;
   box-shadow: 0 25px 35px rgba(0,0,0,0.1);
@@ -212,13 +227,12 @@ body:before
   max-width: 400px;
   color: #fff;
   box-shadow: 0 25px 35px rgba(0,0,0,0.1);
-  border-bottom: 6px solid #F0105E;
+  border-bottom: 6px solid #ff0000;
 }
 .overall:nth-child(even) .container .content
 {
    left: 0;
 }
-
 footer
 {
   background: linear-gradient(45deg,#D34C0E,#F0105E,#D34C0E);
@@ -299,4 +313,125 @@ footer
   opacity: .4;
   font-weight: 200;
 }
+
+.overall3
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+  }
+
+
+
+
+
+
+.swiper-container {
+  max-width: 1639px;
+  max-height: 1000px;
+  padding: 80px;
+  background-color: transparent;
+  padding-bottom: 440px;
+  margin-bottom: 200px;
+  opacity: 0;
+  transition: 1s;
+
+}
+.swiper-container[data-scroll="in"]
+  {
+    opacity: 1;
+    transition-delay: 1s;
+  }
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  max-width: 750px;
+  max-height: 490px;
+  padding: 0px;
+  left: 28px;
+
+
+
+}
+.swiper-slide video
+  {
+    width: 100%;  
+    border-radius: 12px;
+  }
+.swiper-slide .first
+  {
+    position: relative;
+    font-size: 36px;
+    text-align: center;
+  }
+  .swiper-slide .second
+  {
+    position: relative;
+    font-size: 36px;
+    text-align: center;
+  }
+  .swiper-slide .third
+  {
+    position: relative;
+    font-size: 36px;
+    text-align: center;
+  }
+  s.swiper-slide .fist .number1
+   {
+     font-size: 80px;
+   }
+
+
+
+
+
+
+   .top_cars
+   {
+     max-width: 80%;
+     align-items: center;
+   }
+   .top_cars h2
+   {
+     position: relative;
+     margin: 0;
+     padding: 0;
+     display: inline-block;
+     font-size: 2em;
+     transition: 0.5s;
+     transform-origin: left;
+     transform: scaleX(0);
+     margin-bottom: 80px;
+     max-width: 80%;
+     left: 70px;
+   
+}
+.top_cars h2[data-scroll="in"]
+  {
+    transform: scaleX(1);
+  }
+
+.top_cars h2::before
+  {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f01041;
+    transform-origin: right;
+    transition: 0.5s;
+  }
+
+.top_cars h2[data-scroll="in"]::before
+    {
+      transform: scaleX(0);
+      transition-delay: 0.5s;
+    }
 

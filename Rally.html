@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head>
-       <link rel="stylesheet" type="text/css" href="Rally.css">
-       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <title>RALLY</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="jarallax.css">
+        <link rel="stylesheet" type="text/css" href="Rally.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <title>DRIFT</title>
+        <link rel="shortcut icon" type="image/png" href="logos/favicon.png">
+
     </head>
     <body>
         <section>
 
                <a href="index.html" class="logo">
-                <img src="logos/logo.png"></a>
+                <img src="logos/logo.webp"></a>
 
             <div id="carrally"></div>
-            <img src="images/carrally.png" class="carrally">
+            <img src="images/carrally.webp" class="carrally">
         
             <div class="content">
-                <img src="logos/rallylogo.png" class="rallytext">
+                <img src="logos/rallylogo.webp" class="rallytext">
             </div>
-            <img src="images/bgrally.jpg" class="bgrally">
+            <img src="images/bgrally.webp" class="bgrally">
 
 
         </section>
@@ -44,12 +48,14 @@
             })
             </script>
 
+
+
 <div class="overall">
     <div class="box">
         <h2 data-jarallax-element="0 -200">What Rally actually is</h2>
         <div class="container">
             <div class="imgBx jarallax">
-                <img src="images/rally1.jpg" class="jarallax-img">
+                <img src="images/rally1.webp" class="jarallax-img">
             </div>
 
 
@@ -69,7 +75,7 @@
             <h2 data-jarallax-element="0 200">Creator</h2>
             <div class="container">
                 <div class="imgBx jarallax">
-                    <img src="images/rally2.jpg" class="jarallax-img">
+                    <img src="images/rally2.webp" class="jarallax-img">
                 </div>
     
     
@@ -90,7 +96,7 @@
                 <h2 data-jarallax-element="0 -200">Drift king</h2>
                 <div class="container">
                     <div class="imgBx jarallax">
-                        <img src="images/Keiichi_Tsuchiya.jpg" class="jarallax-img">
+                        <img src="images/Keiichi_Tsuchiya.webp" class="jarallax-img">
                     </div>
         
         
@@ -109,27 +115,81 @@
          speed: 0.2
         });
     </script>
-    </body>
-    <footer>
-        <div class="footer-content">
-            <h3>LEGENDARY DRIVERS</h3>
-            <p>This site was created with educational purpose.</p>
-            <ul class="socials">
-                <li><a href="https://www.facebook.com/alexandru.birgaoanu/"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="https://account.xbox.com/en-us/Profile?xr=mebarnav&rtc=1"><i class="fab fa-xbox"></i></a></li>
-                <li><a href="https://twitter.com/InvincibleAlex3"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="https://www.instagram.com/alexandru.birg/"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="https://steamcommunity.com/id/Invinciblealex2"><i class="fab fa-steam"></i></a></li>
-                <li><a href="https://www.youtube.com/channel/UClj0mc4PX8ioCNdx3DTFmHA"><i class="fab fa-youtube"></i></a></li>
-                <li><a href="https://www.twitch.tv/InvincibleAlex"><i class="fab fa-twitch"></i></a></li>
-                <li><a href="https://www.reddit.com/user/lnvincibleAlex"><i class="fab fa-reddit"></i></a></li>
-                <li><a href="https://github.com/InvincibleAlex"><i class="fab fa-github"></a></i>
+  </body>
+       
+          
+           <div class="top_cars">
+                <h2>Best cars in the 2003, 2004, 2005 D1 Grand Prix</h2>
+           </div>
+     
+    <div class="ovarall3">
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+              
+                <div class="swiper-slide"><div class="first"><span style="color: rgb(255, 234, 43);">1</span> Nissan Silvia</div><video src="videos/silvia.mp4" autoplay loop muted></div>
+                <div class="swiper-slide"><div class="second"><span style="color: rgb(129, 129, 129);">2</span> Toyota AE86</div><video src="videos/ae86.mp4" autoplay loop muted></div>
+                <div class="swiper-slide"><div class="third"><span style="color: rgb(184, 110, 0);">3</span> Mazda RX-7</div><video src="videos/mazda.mp4" autoplay loop muted></div>
     
+            </div>
+
+        </div> 
+    </div>     
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+              effect: 'coverflow',
+              grabCursor: true,
+              centeredSlides: true,
+              slidesPerView: 'auto',
+              coverflowEffect: {
+                  rotate: 20,
+                  stretch: 00,
+                  depth: 400,
+                  modifier: 1,
+                  slideShadows : true,
+              },
+              loop: true,
+           
+            });
+          </script>
+
+
+          <script src="scroll.js"></script>
+
+          <script type="text/javascript">
+
+            ScrollOut({
+                
+                targets: 'h2, .swiper-container'
+                        
+                      })
+        
+          </script>
     
-            </ul>
-        </div>
-        <div class="footer-bottom">
-            <p>copyright &copy; <script>document.write(new Date().getFullYear())</script> Legendary Drivers. designed by  <span>Alex Bîrgăoanu</span></p>
-        </div>
-    </footer>
+     
+    
+
+  <footer>
+    <div class="footer-content">
+        <h3>LEGENDARY DRIVERS</h3>
+        <p>This site was created with educational purpose.</p>
+        <ul class="socials">
+            <li><a href="https://www.facebook.com/alexandru.birgaoanu/"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/InvincibleAlex3"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/alexandru.birg/"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://steamcommunity.com/id/Invinciblealex2"><i class="fab fa-steam"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UClj0mc4PX8ioCNdx3DTFmHA"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="https://www.twitch.tv/InvincibleAlex"><i class="fab fa-twitch"></i></a></li>
+            <li><a href="https://www.reddit.com/user/lnvincibleAlex"><i class="fab fa-reddit"></i></a></li>
+            <li><a href="https://github.com/InvincibleAlex"><i class="fab fa-github"></a></i>
+
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>copyright &copy; <script>document.write(new Date().getFullYear())</script> Legendary Drivers. designed by  <span>Alex Bîrgăoanu</span></p>
+    </div>
+
+</footer>
 </html>
