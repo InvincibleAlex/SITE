@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
         <link rel="stylesheet" href="jarallax.css">
         <link rel="stylesheet" type="text/css" href="Drift.css">
@@ -15,14 +16,14 @@
             <header>
                 <div class="logo">
                     <a href ="index.html" class="logo1">
-                        <img src="logos/logo.webp">
+                        <img alt="" src="logos/logo.webp">
                     </a>
                 </div>
             </header>
-            <img src="images/driftzone.webp" class="bgdrift">
-            <img src="images/driftcar.webp" class="cardrift">
+            <img alt="" src="images/driftzone.webp" class="bgdrift">
+            <img alt="" src="images/driftcar.webp" class="cardrift">
             <div class="content">
-               <img src="logos/driftlogo.webp" class="drifttext">
+               <img alt="" src="logos/driftlogo.webp" class="drifttext">
 
         </section>
         <script type="text/javascript">
@@ -53,7 +54,7 @@
         <h2 data-jarallax-element="0 -200">What Drift actually is</h2>
         <div class="container">
             <div class="imgBx jarallax">
-                <img src="images/drift_mazda.webp" class="jarallax-img">
+                <img alt="" src="images/drift_mazda.webp" class="jarallax-img">
             </div>
 
 
@@ -73,7 +74,7 @@
             <h2 data-jarallax-element="0 200">Creator</h2>
             <div class="container">
                 <div class="imgBx jarallax">
-                    <img src="images/Kunimitsu-Takahashi3.webp" class="jarallax-img">
+                    <img alt="" src="images/Kunimitsu-Takahashi3.webp" class="jarallax-img">
                 </div>
     
     
@@ -90,7 +91,7 @@
                 <h2 data-jarallax-element="0 -200">Drift king</h2>
                 <div class="container">
                     <div class="imgBx jarallax">
-                        <img src="images/Keiichi_Tsuchiya.webp" class="jarallax-img">
+                        <img alt="" src="images/Keiichi_Tsuchiya.webp" class="jarallax-img">
                     </div>
         
         
@@ -109,6 +110,7 @@
          speed: 0.2
         });
     </script>
+    
   </body>
        
           
@@ -161,6 +163,9 @@
                       })
         
           </script>
+
+
+
     
      
     
@@ -186,4 +191,14 @@
     </div>
 
 </footer>
+<a class="gototop" href="#"><i class="fas fa-arrow-up"></i></a>
+
+        <script type="text/javascript">
+
+            window.addEventListener('scroll',function(){
+                var scroll = document.querySelector('.gototop');
+                scroll.classList.toggle("active" , window.scrollY > 500)
+            })
+
+        </script>
 </html>

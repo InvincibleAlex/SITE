@@ -283,7 +283,7 @@ video
 }
 .overalll
 {
-background: url(images/brick5.jpg);
+background: url(images/brick5.webp);
 background-size: cover;
 background-position: fixed;
 min-height: 100vh;
@@ -492,8 +492,9 @@ footer
 .footer-bottom span
 {
   text-transform: uppercase;
-  opacity: .4;
+  opacity: 0.4;
   font-weight: 200;
+  
 }
 
 @media (max-width: 1160px) {

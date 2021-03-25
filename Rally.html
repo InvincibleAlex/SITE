@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="jarallax.css">
         <link rel="stylesheet" type="text/css" href="Rally.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
@@ -14,15 +14,15 @@
         <section>
 
                <a href="index.html" class="logo">
-                <img src="logos/logo.webp"></a>
+                <img alt="" src="logos/logo.webp"></a>
 
             <div id="carrally"></div>
-            <img src="images/carrally.webp" class="carrally">
+            <img alt="" src="images/carrally.webp" class="carrally">
         
             <div class="content">
-                <img src="logos/rallylogo.webp" class="rallytext">
+                <img alt="" src="logos/rallylogo.webp" class="rallytext">
             </div>
-            <img src="images/bgrally.webp" class="bgrally">
+            <img alt="" src="images/bgrally.webp" class="bgrally">
 
 
         </section>
@@ -55,7 +55,7 @@
         <h2 data-jarallax-element="0 -200">What Rally actually is</h2>
         <div class="container">
             <div class="imgBx jarallax">
-                <img src="images/rally1.webp" class="jarallax-img">
+                <img alt="" src="images/rally1.webp" class="jarallax-img">
             </div>
 
 
@@ -75,7 +75,7 @@
             <h2 data-jarallax-element="0 200">Creator</h2>
             <div class="container">
                 <div class="imgBx jarallax">
-                    <img src="images/rally2.webp" class="jarallax-img">
+                    <img alt="" src="images/rally2.webp" class="jarallax-img">
                 </div>
     
     
@@ -96,7 +96,7 @@
                 <h2 data-jarallax-element="0 -200">Drift king</h2>
                 <div class="container">
                     <div class="imgBx jarallax">
-                        <img src="images/Keiichi_Tsuchiya.webp" class="jarallax-img">
+                        <img alt="" src="images/Keiichi_Tsuchiya.webp" class="jarallax-img">
                     </div>
         
         
@@ -192,4 +192,16 @@
     </div>
 
 </footer>
+
+<a class="gototop" href="#"><i class="fas fa-arrow-up"></i></a>
+
+        <script type="text/javascript">
+
+            window.addEventListener('scroll',function(){
+                var scroll = document.querySelector('.gototop');
+                scroll.classList.toggle("active" , window.scrollY > 500)
+            })
+
+        </script>
+        
 </html>

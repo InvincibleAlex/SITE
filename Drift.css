@@ -117,7 +117,7 @@ section header .logo
 
 ::-webkit-scrollbar-thumb
 {
-    background: linear-gradient(45deg,#000000,#677381 );
+    background: linear-gradient(45deg,#013066,#0077ff );
     border-radius: 5px;
 }
 
@@ -420,3 +420,29 @@ footer
       transition-delay: 0.5s;
     }
 
+
+  .gototop
+  {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    background: #0077ff;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    bottom: 50px;
+
+  }
+.gototop.active
+    {
+      bottom: 40px;
+      visibility: visible;
+      opacity: 1;
+    }
