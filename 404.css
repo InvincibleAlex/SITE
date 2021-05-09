@@ -9,9 +9,8 @@ html
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: black;
   font-family: 'Poppins', sans-serif;
- 
-
  }
 
 .overall1
@@ -20,6 +19,7 @@ html
   width: 100%;
   height: 100vh;
   align-items: center;
+  
 
 
 }
@@ -32,19 +32,71 @@ html
   color: rgb(255, 0, 0);
   z-index: 1;
   bottom: 50%;
-  left: 7%;
+  left: 4%;
   font-size: 40px;
   font-family: nosifer;
   letter-spacing: 5px;
   font-weight: 50;
   overflow-y: scroll;
-  padding: 23px ;
+  padding: 55px ;
   overflow: scroll;
   overflow-x: hidden;
 
 
   
 }
+.demon_text2
+  {
+  position: absolute;
+  width: 490px;
+  height: 120px;
+  overflow: auto;  
+  z-index: 1;
+  bottom: 50%;
+  left: 0%;
+  font-size: 40px;
+  font-family: nosifer;
+  letter-spacing: 5px;
+  font-weight: 50;
+  overflow-y: scroll;
+  padding: 230px ;
+  overflow: scroll;
+  overflow-x: hidden;
+  animation: text_demon 5s infinite;
+
+
+  
+}
+@keyframes text_demon{
+  0%{
+    color: #FF0000;
+}
+15%{
+  color: #b94d1b;
+}
+25%{
+  color: #720000;
+}
+35%{
+  color: #be6d37;
+}
+50%{
+  color: #000000;
+}
+65%{
+  color: #af7800;
+}
+75%{
+  color: #ff7300d8;
+}
+85%{
+  color: #ff7b00;
+}
+100%{
+  color: #FF0000;
+}
+}
+
 ::-webkit-scrollbar 
   {
   width: 0px;
@@ -65,14 +117,13 @@ html
   background-size: cover;
   margin: 0;
   z-index: -1;
-
 }
 
 
  section .box23 {
 
   width: 200px;
-  height: 100px;
+  height: 96px;
   overflow: auto;
   position: absolute;
 
@@ -87,7 +138,6 @@ html
   width: 100%;
   height: 100vh;
   align-items: center;
-
 
 
 }
@@ -177,7 +227,6 @@ section
   min-height: 100vh;
   overflow:hidden;
 
-
 }
 section .text
 {
@@ -187,7 +236,6 @@ section .text
   font-weight: lighter;
   user-select: none;
   pointer-events: none;
-  width: 67%;
   animation: your_soul 23s linear infinite;
   font-family: devil-language;
   z-index: 2;
@@ -241,9 +289,3 @@ section .text span
   transform-origin: 0 100px;
 
 }
-.overall4 .primul
-  {
-    background-color: black;
-    width: 100%;
-    height: 1080px;
-  }
