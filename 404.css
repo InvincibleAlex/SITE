@@ -10,6 +10,8 @@ html
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+ 
+
  }
 
 .overall1
@@ -63,6 +65,7 @@ html
   background-size: cover;
   margin: 0;
   z-index: -1;
+
 }
 
 
@@ -84,6 +87,7 @@ html
   width: 100%;
   height: 100vh;
   align-items: center;
+
 
 
 }
@@ -173,6 +177,7 @@ section
   min-height: 100vh;
   overflow:hidden;
 
+
 }
 section .text
 {
@@ -182,6 +187,7 @@ section .text
   font-weight: lighter;
   user-select: none;
   pointer-events: none;
+  width: 67%;
   animation: your_soul 23s linear infinite;
   font-family: devil-language;
   z-index: 2;
@@ -235,3 +241,9 @@ section .text span
   transform-origin: 0 100px;
 
 }
+.overall4 .primul
+  {
+    background-color: black;
+    width: 100%;
+    height: 1080px;
+  }

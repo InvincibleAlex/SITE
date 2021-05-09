@@ -339,6 +339,7 @@ footer
   margin-bottom: 200px;
   opacity: 0;
   transition: 1s;
+  color: #ffff;
 
 }
 .swiper-container[data-scroll="in"]
@@ -409,6 +410,7 @@ footer
      margin-bottom: 80px;
      max-width: 80%;
      left: 70px;
+     color: #ffff;
    
 }
 .top_cars h2[data-scroll="in"]
