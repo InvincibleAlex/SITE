@@ -45,11 +45,20 @@ html
 
   
 }
+
+@media (max-width: 1600px) {
+  .demon_text
+    {
+      
+      color: #FFFFFf;
+    }
+  }
+
 .demon_text2
   {
   position: absolute;
   width: 490px;
-  height: 120px;
+  height: 167px;
   overflow: auto;  
   z-index: 1;
   bottom: 50%;
@@ -59,7 +68,7 @@ html
   letter-spacing: 5px;
   font-weight: 50;
   overflow-y: scroll;
-  padding: 230px ;
+  padding: 70px ;
   overflow: scroll;
   overflow-x: hidden;
   animation: text_demon 5s infinite;
